@@ -17,13 +17,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 200
+        
         tableView.register(UINib(nibName: "HomeTextCell", bundle: nil), forCellReuseIdentifier: "HomeTextCell")
     }
 
 }
 
-extension HomeViewController: UITableViewDataSource{
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
