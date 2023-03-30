@@ -10,6 +10,9 @@
 		8D90F93329D5522000D85E8A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D90F93229D5522000D85E8A /* Account.storyboard */; };
 		8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE5A6829D48468000EC090 /* ViewController2test.swift */; };
 		8DF06CB729D6093E00D8F22C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB629D6093E00D8F22C /* Home.storyboard */; };
+		8DF06CBA29D6109800D8F22C /* HomeTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CB829D6109800D8F22C /* HomeTextCell.swift */; };
+		8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB929D6109800D8F22C /* HomeTextCell.xib */; };
+		8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CBC29D617A600D8F22C /* HomeViewController.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
 		B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */; };
 		B8CF3E5E29D4803B00DA2334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5D29D4803B00DA2334 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		8D90F93229D5522000D85E8A /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		8DBE5A6829D48468000EC090 /* ViewController2test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2test.swift; sourceTree = "<group>"; };
 		8DF06CB629D6093E00D8F22C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8DF06CB829D6109800D8F22C /* HomeTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextCell.swift; sourceTree = "<group>"; };
+		8DF06CB929D6109800D8F22C /* HomeTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTextCell.xib; sourceTree = "<group>"; };
+		8DF06CBC29D617A600D8F22C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 				B8CF3E5D29D4803B00DA2334 /* ViewController.swift */,
 				B8CF3E5F29D4803B00DA2334 /* Main.storyboard */,
 				8DF06CB629D6093E00D8F22C /* Home.storyboard */,
+				8DF06CBC29D617A600D8F22C /* HomeViewController.swift */,
 				8D90F93229D5522000D85E8A /* Account.storyboard */,
 				B8CF3E6229D4803E00DA2334 /* Assets.xcassets */,
 				B8CF3E6429D4803E00DA2334 /* LaunchScreen.storyboard */,
@@ -78,6 +85,8 @@
 				8DBE5A6829D48468000EC090 /* ViewController2test.swift */,
 				B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */,
 				B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */,
+				8DF06CB829D6109800D8F22C /* HomeTextCell.swift */,
+				8DF06CB929D6109800D8F22C /* HomeTextCell.xib */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";
@@ -145,6 +154,7 @@
 				B8CF3E6329D4803E00DA2334 /* Assets.xcassets in Resources */,
 				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
+				8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +168,9 @@
 				B8CF3E5E29D4803B00DA2334 /* ViewController.swift in Sources */,
 				B8CF3E6E29D5085000DA2334 /* Messages_TableViewController.swift in Sources */,
 				8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */,
+				8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */,
 				B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */,
+				8DF06CBA29D6109800D8F22C /* HomeTextCell.swift in Sources */,
 				B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */,
 				B8CF3E7029D5086300DA2334 /* Messages_TableViewCell.swift in Sources */,
 			);
