@@ -217,7 +217,6 @@
         <!--View Controller-->
         <scene sceneID="CnD-rG-FK7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-5h-oIY" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="VUh-2F-pH4" customClass="ViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sui-pi-GOP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -231,43 +230,23 @@
                                     <segue destination="49m-zU-dfh" kind="show" id="IZ0-Vd-LMG"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoNoBg1" translatesAutoresizingMaskIntoConstraints="NO" id="z8A-xm-eRM">
-                                <rect key="frame" x="0.0" y="76" width="393" height="80"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92E-pZ-mbM">
-                                <rect key="frame" x="137" y="179" width="119" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="haha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQA-ey-Tzh">
-                                <rect key="frame" x="148" y="277" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="33Y-0N-5xe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="z8A-xm-eRM" firstAttribute="top" secondItem="sui-pi-GOP" secondAttribute="top" constant="76" id="DFQ-pn-UJ8"/>
-                            <constraint firstItem="92E-pZ-mbM" firstAttribute="top" secondItem="z8A-xm-eRM" secondAttribute="bottom" constant="23" id="MdY-jN-Nvi"/>
-                            <constraint firstItem="33Y-0N-5xe" firstAttribute="trailing" secondItem="z8A-xm-eRM" secondAttribute="trailing" id="U27-GI-AOb"/>
-                            <constraint firstItem="z8A-xm-eRM" firstAttribute="leading" secondItem="33Y-0N-5xe" secondAttribute="leading" id="ahv-kM-IJg"/>
                             <constraint firstItem="mmd-3w-yAm" firstAttribute="centerY" secondItem="sui-pi-GOP" secondAttribute="centerY" id="e7q-Z9-UBr"/>
                             <constraint firstItem="mmd-3w-yAm" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="gID-QR-9BO"/>
-                            <constraint firstItem="92E-pZ-mbM" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="sQM-O7-Ppx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z8r-kI-sMD"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-5h-oIY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1127" y="-413"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zkc-13-56y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojf-xi-q3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="49m-zU-dfh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAI-Ey-FXd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -278,7 +257,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="0LC-R9-lgt" kind="show" id="7GH-K2-tet"/>
+                                    <segue destination="0LC-R9-lgt" kind="show" id="fks-7L-LjK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -291,12 +270,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="KdT-fn-FMT"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojf-xi-q3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2115" y="-413"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logoNoBg1" width="360" height="80"/>
         <image name="message_photo_0" width="55" height="55"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
