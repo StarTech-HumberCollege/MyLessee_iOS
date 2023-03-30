@@ -131,20 +131,14 @@
             <point key="canvasLocation" x="3485" y="1358"/>
         </scene>
         <!--Home-->
-        <scene sceneID="fob-uq-g4M">
+        <scene sceneID="FMz-55-agj">
             <objects>
-                <viewController id="7gy-PF-hC0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EJc-aE-lfx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="9fc-cz-Jg2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="iconHome" id="NoQ-aG-ifU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JZL-fG-9gV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="2Sj-6U-P3G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uFv-X7-9BN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YwX-yA-nOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3486" y="-1499"/>
+            <point key="canvasLocation" x="4263" y="-1277"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mbm-PN-BaL">
@@ -157,11 +151,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7gy-PF-hC0" kind="relationship" relationship="viewControllers" id="ZxU-6Q-kRp"/>
                         <segue destination="383-pV-sZE" kind="relationship" relationship="viewControllers" id="5wN-oR-CMV"/>
                         <segue destination="orP-PP-PKq" kind="relationship" relationship="viewControllers" id="Ema-UL-O3X"/>
                         <segue destination="q5g-x4-wSg" kind="relationship" relationship="viewControllers" id="cTm-fg-gFB"/>
                         <segue destination="x5O-fc-wWV" kind="relationship" relationship="viewControllers" id="9E1-Z0-3Oy"/>
+                        <segue destination="2Sj-6U-P3G" kind="relationship" relationship="viewControllers" id="Iu6-hy-duy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9F9-C8-f6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -532,7 +526,6 @@
         <image name="buttonLogin" width="188" height="47"/>
         <image name="fullName" width="300" height="50"/>
         <image name="iconCalendar" width="30" height="30"/>
-        <image name="iconHome" width="30" height="30"/>
         <image name="iconList" width="30" height="30"/>
         <image name="iconMessage" width="30" height="30"/>
         <image name="iconSettings" width="25.333333969116211" height="26.666666030883789"/>
