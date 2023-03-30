@@ -14,8 +14,18 @@ class HomeViewController: UIViewController {
     
     var post1 = (name: "Tuyi Chen", profile:"tuyi", text: "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities. ")
     
+    var post2 = (name: "Anton Vinokurov", profile:"anton", text: "3 Bedroom apartment in the heart of Toronto downtown.")
+    
+    var post3 = (name: "Bill Robertson", profile:"sponsor", text: "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto")
+    
+    var posts = [(String, String, String)]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        posts.append(post1)
+        posts.append(post2)
+        posts.append(post3)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -33,7 +43,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath) as! HomeTextCell
+        
         
         return cell
     }
