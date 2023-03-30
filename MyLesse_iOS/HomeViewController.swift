@@ -9,21 +9,28 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var post1 = (name: "Tuyi", text: "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities. ")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HomeViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
