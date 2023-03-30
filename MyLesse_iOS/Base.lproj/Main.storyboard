@@ -33,6 +33,14 @@
             </objects>
             <point key="canvasLocation" x="4411.4503816793895" y="-94.366197183098592"/>
         </scene>
+        <!--SingleMessage-->
+        <scene sceneID="pxS-ZC-gXk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingleMessage" id="SPY-pI-7s3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMI-DA-xQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="777"/>
+        </scene>
         <!--Messages-->
         <scene sceneID="VjI-Fc-59E">
             <objects>
@@ -191,7 +199,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwX-yA-nOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4263" y="-1277"/>
+            <point key="canvasLocation" x="3986" y="-797"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mbm-PN-BaL">

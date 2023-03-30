@@ -18,6 +18,8 @@
 		B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD729D6333400F93163 /* NewListingViewController.swift */; };
 		B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */; };
 		B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDC29D6334B00F93163 /* MyListing.storyboard */; };
+		B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */; };
+		B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
 		B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */; };
 		B8CF3E5E29D4803B00DA2334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5D29D4803B00DA2334 /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 		B81F4DD729D6333400F93163 /* NewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListingViewController.swift; sourceTree = "<group>"; };
 		B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewController.swift; sourceTree = "<group>"; };
 		B81F4DDC29D6334B00F93163 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListing.storyboard; sourceTree = "<group>"; };
+		B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleMessage.storyboard; sourceTree = "<group>"; };
+		B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMessageViewController.swift; sourceTree = "<group>"; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				8DF06CB829D6109800D8F22C /* HomeTextCell.swift */,
 				8DF06CB929D6109800D8F22C /* HomeTextCell.xib */,
 				B81F4DDC29D6334B00F93163 /* MyListing.storyboard */,
+				B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */,
+				B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
 				B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
+				B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */,
 				8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 				B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */,
 				8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */,
 				B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */,
+				B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */,
 				B81F4DD429D6317700F93163 /* SATextField_NewListing.swift in Sources */,
 				B81F4DD929D6333400F93163 /* MyListingTableViewCell.swift in Sources */,
 				8DF06CBA29D6109800D8F22C /* HomeTextCell.swift in Sources */,
