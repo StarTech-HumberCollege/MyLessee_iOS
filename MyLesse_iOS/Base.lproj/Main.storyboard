@@ -307,10 +307,31 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="signUpWithFacebook"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9no-nf-6gu">
+                                <rect key="frame" x="105.66666666666669" y="728.66666666666663" width="182" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Already have a account?">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="menu" size="14"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Star Tech ⓒ, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-JT-V7J">
+                                <rect key="frame" x="83" y="797" width="227" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="33Y-0N-5xe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="33Y-0N-5xe" firstAttribute="bottom" secondItem="Hdr-JT-V7J" secondAttribute="bottom" constant="3" id="0Fx-8g-3eB"/>
                             <constraint firstItem="tsH-M6-3eK" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="2yK-bH-odw"/>
                             <constraint firstItem="G2e-eg-X2p" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="368-Zl-0ZA"/>
                             <constraint firstItem="iX2-FT-83K" firstAttribute="top" secondItem="Ant-rF-RsB" secondAttribute="bottom" constant="18" id="3w7-gx-C95"/>
@@ -318,7 +339,9 @@
                             <constraint firstItem="z8A-xm-eRM" firstAttribute="top" secondItem="sui-pi-GOP" secondAttribute="top" constant="76" id="DFQ-pn-UJ8"/>
                             <constraint firstItem="tsH-M6-3eK" firstAttribute="top" secondItem="yqf-eN-Qyl" secondAttribute="bottom" constant="7" id="G0m-vD-9HB"/>
                             <constraint firstItem="Udz-XF-hcf" firstAttribute="top" secondItem="k4y-N4-8eU" secondAttribute="bottom" constant="23" id="GmI-5A-whE"/>
+                            <constraint firstItem="Hdr-JT-V7J" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="LDq-8s-pAJ"/>
                             <constraint firstItem="92E-pZ-mbM" firstAttribute="top" secondItem="z8A-xm-eRM" secondAttribute="bottom" constant="23" id="MdY-jN-Nvi"/>
+                            <constraint firstItem="9no-nf-6gu" firstAttribute="top" secondItem="0dU-hg-27r" secondAttribute="bottom" constant="17" id="Nf0-Ef-uVz"/>
                             <constraint firstItem="k4y-N4-8eU" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="NyK-gb-81a"/>
                             <constraint firstItem="0dU-hg-27r" firstAttribute="top" secondItem="tsH-M6-3eK" secondAttribute="bottom" constant="6" id="Qfv-HN-0uP"/>
                             <constraint firstItem="yqf-eN-Qyl" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="T6s-NW-EIy"/>
@@ -330,6 +353,7 @@
                             <constraint firstItem="G2e-eg-X2p" firstAttribute="top" secondItem="92E-pZ-mbM" secondAttribute="bottom" constant="26" id="fZZ-YX-kzl"/>
                             <constraint firstItem="Udz-XF-hcf" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="gtT-Zr-viO"/>
                             <constraint firstItem="Ant-rF-RsB" firstAttribute="top" secondItem="G2e-eg-X2p" secondAttribute="bottom" constant="18" id="knN-VT-slh"/>
+                            <constraint firstItem="9no-nf-6gu" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="oU0-zQ-1ef"/>
                             <constraint firstItem="k4y-N4-8eU" firstAttribute="top" secondItem="iX2-FT-83K" secondAttribute="bottom" constant="18" id="pGK-GN-cIU"/>
                             <constraint firstItem="yCI-7E-ehQ" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="qKo-0q-Zsg"/>
                             <constraint firstItem="0dU-hg-27r" firstAttribute="centerX" secondItem="sui-pi-GOP" secondAttribute="centerX" id="qau-3s-H6z"/>
