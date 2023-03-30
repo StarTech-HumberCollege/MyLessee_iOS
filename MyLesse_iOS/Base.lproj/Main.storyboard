@@ -455,6 +455,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ILO-h2-KlF" kind="show" id="CkA-OF-ues"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Star Tech ⓒ, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVM-SJ-BOZ">
                                 <rect key="frame" x="83" y="797" width="227" height="18"/>
@@ -512,6 +515,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDg-ql-CCB" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2121" y="-413"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="SUT-1M-O5C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="ILO-h2-KlF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eOx-nm-oKM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNb-Cq-ZSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="-23"/>
         </scene>
     </scenes>
     <resources>
