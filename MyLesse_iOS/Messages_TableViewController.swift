@@ -8,7 +8,10 @@
 import UIKit
 
 class Messages_TableViewController: UITableViewController {
-
+   
+    //Data for TableViews
+    let data : [(name: String, message: String, date : String, img : String, premium : Bool)] = [("Tuyi Chen", "Hi Alvaro! I was referred to you by Anton, he told me you’re looking to rent your ...", "20/03/2023", "message_photo_0", false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1", true),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +20,7 @@ class Messages_TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+     
     }
 
     // MARK: - Table view data source
@@ -28,14 +32,28 @@ class Messages_TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 9
+        return data.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+        //************************** Configure tableview **************************
+        tableView.rowHeight = 100
+        
+        //************************** Configure table view cell **************************
         let cell = tableView.dequeueReusableCell(withIdentifier: "Messages_TableViewCell", for: indexPath) as! Messages_TableViewCell
-
-        // Configure the cell...
+        
+        cell.message_img.image = UIImage(named: data[indexPath.item].img)
+        cell.message_name.text = data[indexPath.item].name
+        cell.message_msg.text = data[indexPath.item].message
+        cell.message_date.text = data[indexPath.item].date
+        if(data[indexPath.item].premium) {
+            cell.message_premium.image = UIImage(named:"ic_outline-verified-user" )
+        }else {
+            cell.message_premium.image = UIImage(named: "")
+        }
+        
 
         return cell
     }

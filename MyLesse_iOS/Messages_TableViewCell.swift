@@ -13,6 +13,7 @@ class Messages_TableViewCell: UITableViewCell {
     @IBOutlet var message_img : UIImageView!
     @IBOutlet var message_msg : UILabel!
     @IBOutlet var message_date : UILabel!
+    @IBOutlet var message_premium : UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
