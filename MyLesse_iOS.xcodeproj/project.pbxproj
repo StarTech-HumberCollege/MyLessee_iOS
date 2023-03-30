@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D90F93329D5522000D85E8A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D90F93229D5522000D85E8A /* Account.storyboard */; };
 		8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE5A6829D48468000EC090 /* ViewController2test.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
 		B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D90F93229D5522000D85E8A /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		8DBE5A6829D48468000EC090 /* ViewController2test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2test.swift; sourceTree = "<group>"; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */,
 				B8CF3E5D29D4803B00DA2334 /* ViewController.swift */,
 				B8CF3E5F29D4803B00DA2334 /* Main.storyboard */,
+				8D90F93229D5522000D85E8A /* Account.storyboard */,
 				B8CF3E6229D4803E00DA2334 /* Assets.xcassets */,
 				B8CF3E6429D4803E00DA2334 /* LaunchScreen.storyboard */,
 				B8CF3E6729D4803E00DA2334 /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				B8CF3E6629D4803E00DA2334 /* LaunchScreen.storyboard in Resources */,
 				B8CF3E6329D4803E00DA2334 /* Assets.xcassets in Resources */,
+				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
