@@ -8,22 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Listing-->
-        <scene sceneID="khP-09-xxX">
-            <objects>
-                <viewController id="383-pV-sZE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fyM-g8-v3J">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="7zI-Eq-0Vo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Listing" image="iconList" id="Obz-nD-z3a"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CVc-Cq-rHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4411.4503816793895" y="-816.19718309859161"/>
-        </scene>
         <!--Calendar-->
         <scene sceneID="XnI-I5-AHj">
             <objects>
@@ -88,7 +72,6 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for a message ..." minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-Hm-cXo">
                                             <rect key="frame" x="0.0" y="28.333333333333336" width="334" height="0.0"/>
-                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -221,24 +204,24 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="383-pV-sZE" kind="relationship" relationship="viewControllers" id="5wN-oR-CMV"/>
                         <segue destination="orP-PP-PKq" kind="relationship" relationship="viewControllers" id="Ema-UL-O3X"/>
                         <segue destination="q5g-x4-wSg" kind="relationship" relationship="viewControllers" id="cTm-fg-gFB"/>
                         <segue destination="x5O-fc-wWV" kind="relationship" relationship="viewControllers" id="9E1-Z0-3Oy"/>
                         <segue destination="2Sj-6U-P3G" kind="relationship" relationship="viewControllers" id="Iu6-hy-duy"/>
+                        <segue destination="39e-Dn-7P5" kind="relationship" relationship="viewControllers" id="dO7-SX-gk5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9F9-C8-f6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2959.5419847328244" y="-413.38028169014086"/>
+            <point key="canvasLocation" x="2975" y="-423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WgE-BU-2ue">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cW5-x8-rXw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cW5-x8-rXw" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRf-B7-CvK">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -397,6 +380,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z8r-kI-sMD"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-5h-oIY" sceneMemberID="firstResponder"/>
             </objects>
@@ -562,6 +546,17 @@
             </objects>
             <point key="canvasLocation" x="2342" y="-23"/>
         </scene>
+        <!--MyListings-->
+        <scene sceneID="Svw-0c-IVS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyListing" id="39e-Dn-7P5" userLabel="MyListings" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fF5-pj-P0q"/>
+                    <navigationItem key="navigationItem" id="Vem-aJ-gkj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlv-Vh-6uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784" y="-508"/>
+        </scene>
     </scenes>
     <resources>
         <image name="buttonCreate" width="188" height="47"/>
@@ -569,7 +564,6 @@
         <image name="fullName" width="300" height="50"/>
         <image name="ic_outline-verified-user" width="15" height="15"/>
         <image name="iconCalendar" width="30" height="30"/>
-        <image name="iconList" width="30" height="30"/>
         <image name="iconMessage" width="30" height="30"/>
         <image name="iconSettings" width="25.333333969116211" height="26.666666030883789"/>
         <image name="line1" width="318" height="0.66666668653488159"/>
