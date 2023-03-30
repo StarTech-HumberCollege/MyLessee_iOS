@@ -12,13 +12,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var post1 = (name: "Tuyi", text: "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities. ")
+    var post1 = (name: "Tuyi Chen", profile:"tuyi", text: "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities. ")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "HomeTextCell", bundle: nil), forCellReuseIdentifier: "HomeTextCell")
     }
 
 }
@@ -29,7 +29,9 @@ extension HomeViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath)
+        
+        return cell
     }
     
     
