@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="7zI-Eq-0Vo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Listing" id="Obz-nD-z3a"/>
+                    <tabBarItem key="tabBarItem" title="My Listing" image="iconList" id="Obz-nD-z3a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVc-Cq-rHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="sNw-qX-m1V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="Eas-50-hPs"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="iconCalendar" id="Eas-50-hPs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj5-CS-aDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +108,7 @@
                         <viewLayoutGuide key="safeArea" id="fHO-Ng-YJg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Messages" id="diQ-l2-kgX"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="iconMessage" id="diQ-l2-kgX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUh-MK-p8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +124,7 @@
                         <viewLayoutGuide key="safeArea" id="q8t-ha-bYO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notification" id="Mft-WE-IH6"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="iconSettings" id="Mft-WE-IH6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfU-hf-Fw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,7 +140,7 @@
                         <viewLayoutGuide key="safeArea" id="9fc-cz-Jg2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="NoQ-aG-ifU"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="iconHome" id="NoQ-aG-ifU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZL-fG-9gV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,7 +217,6 @@
         <!--View Controller-->
         <scene sceneID="CnD-rG-FK7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-5h-oIY" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="VUh-2F-pH4" customClass="ViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sui-pi-GOP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -339,13 +338,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="z8r-kI-sMD"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hk-5h-oIY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1125.9541984732823" y="-413.38028169014086"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zkc-13-56y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojf-xi-q3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="49m-zU-dfh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAI-Ey-FXd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -369,6 +368,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KdT-fn-FMT"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojf-xi-q3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2115" y="-413"/>
         </scene>
@@ -376,6 +376,11 @@
     <resources>
         <image name="buttonCreate" width="188" height="47"/>
         <image name="fullName" width="300" height="50"/>
+        <image name="iconCalendar" width="30" height="30"/>
+        <image name="iconHome" width="30" height="30"/>
+        <image name="iconList" width="30" height="30"/>
+        <image name="iconMessage" width="30" height="30"/>
+        <image name="iconSettings" width="25.333333969116211" height="26.666666030883789"/>
         <image name="line1" width="318" height="0.66666668653488159"/>
         <image name="logoNoBg1" width="360" height="80"/>
         <image name="mail" width="300" height="50"/>
