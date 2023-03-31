@@ -123,13 +123,13 @@
 				8DBE5A6829D48468000EC090 /* ViewController2test.swift */,
 				B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */,
 				B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */,
+				8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */,
+				8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */,
 				8DF06CB829D6109800D8F22C /* HomeTextCell.swift */,
 				8DF06CB929D6109800D8F22C /* HomeTextCell.xib */,
 				B81F4DDC29D6334B00F93163 /* MyListing.storyboard */,
 				B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */,
 				B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */,
-				8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */,
-				8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";

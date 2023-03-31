@@ -8,7 +8,14 @@
 import UIKit
 
 class HomeImageCell: UITableViewCell {
-
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var bodyTextLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
