@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--My Listing-->
         <scene sceneID="5Dc-sh-frD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Wb-Xg-s4z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="myListing_navBar" selectedImage="myListing_navBar" id="VxF-pQ-v6E"/>
+                    <tabBarItem key="tabBarItem" title="My Listing" image="myListing_navBar" selectedImage="myListing_navBar" id="VxF-pQ-v6E"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="u85-8e-yrp">

@@ -19,7 +19,7 @@ class Notifications_TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.tableView.register(Notifications_TableViewCell.self, forCellReuseIdentifier: "Notifications_TableViewCell")
+//        self.tableView.register(Notifications_TableViewCell.self, forCellReuseIdentifier: "Notifications_TableViewCell")
     }
 
     // MARK: - Table view data source
@@ -40,7 +40,7 @@ class Notifications_TableViewController: UITableViewController {
         //************************** Configure tableview **************************
         tableView.rowHeight = 100
         let cell = tableView.dequeueReusableCell(withIdentifier: "Notifications_TableViewCell", for: indexPath) as! Notifications_TableViewCell
-        cell.textLabel?.text = " HOLA"
+//        cell.textLabel?.text = " HOLA"
         cell.notification_img.image = UIImage(named: data[indexPath.item].img)
         cell.notification_action.text = data[indexPath.item].action
         cell.notification_notification.text = data[indexPath.item].notification

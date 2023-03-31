@@ -14,9 +14,9 @@
                 <viewControllerPlaceholder storyboardName="SingleMessage" id="SPY-pI-7s3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMI-DA-xQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="777"/>
+            <point key="canvasLocation" x="2798.4732824427479" y="776.76056338028172"/>
         </scene>
-        <!--Messages-->
+        <!--Messages Table View Controller-->
         <scene sceneID="VjI-Fc-59E">
             <objects>
                 <viewController id="q5g-x4-wSg" customClass="Messages_TableViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,11 +169,11 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Messages" image="iconMessage" id="diQ-l2-kgX"/>
+                    <navigationItem key="navigationItem" id="vS5-np-aLY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUh-MK-p8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765.6488549618321" y="676.76056338028172"/>
+            <point key="canvasLocation" x="2692.3664122137402" y="676.76056338028172"/>
         </scene>
         <!--Home-->
         <scene sceneID="FMz-55-agj">
@@ -196,11 +196,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="q5g-x4-wSg" kind="relationship" relationship="viewControllers" id="cTm-fg-gFB"/>
+                        <segue destination="baA-KA-k1I" kind="relationship" relationship="viewControllers" id="cTm-fg-gFB"/>
                         <segue destination="2Sj-6U-P3G" kind="relationship" relationship="viewControllers" id="Iu6-hy-duy"/>
                         <segue destination="39e-Dn-7P5" kind="relationship" relationship="viewControllers" id="dO7-SX-gk5"/>
                         <segue destination="59k-in-gdy" kind="relationship" relationship="viewControllers" id="RXs-EL-KQs"/>
-                        <segue destination="WBd-k9-V7T" kind="relationship" relationship="viewControllers" id="KiX-ON-FdX"/>
+                        <segue destination="eC0-Ly-Pgb" kind="relationship" relationship="viewControllers" id="fDH-zr-mqe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9F9-C8-f6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -539,6 +539,16 @@
             <point key="canvasLocation" x="29" y="386"/>
         </scene>
         <!--Notifications-->
+        <scene sceneID="lGA-jl-4q1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="eC0-Ly-Pgb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Cdr-e6-2iB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uF-EU-qzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333" y="215"/>
+        </scene>
+        <!--Notifications-->
         <scene sceneID="Nyn-Yl-Twg">
             <objects>
                 <tableViewController storyboardIdentifier="Notifications_TableViewController" id="WBd-k9-V7T" userLabel="Notifications" customClass="Notifications_TableViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -621,21 +631,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagePhoto1" translatesAutoresizingMaskIntoConstraints="NO" id="9LD-kE-6lT">
-                                <rect key="frame" x="157" y="114" width="100" height="100"/>
+                                <rect key="frame" x="157" y="158" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="GNX-N9-DIj"/>
                                     <constraint firstAttribute="height" constant="100" id="Ts7-Ow-nWd"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icOutlineVerifiedUser" translatesAutoresizingMaskIntoConstraints="NO" id="Y47-qo-pjm">
-                                <rect key="frame" x="128" y="224" width="15" height="15"/>
+                                <rect key="frame" x="128" y="268" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="bO7-yv-1zD"/>
                                     <constraint firstAttribute="width" constant="15" id="bd0-j2-9hH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gonzalo Mendoza " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-IY-64j">
-                                <rect key="frame" x="151" y="223" width="116" height="17"/>
+                                <rect key="frame" x="151" y="267" width="116" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -647,7 +657,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msgExample" translatesAutoresizingMaskIntoConstraints="NO" id="ot0-if-s0I">
-                                <rect key="frame" x="0.0" y="263" width="414" height="511"/>
+                                <rect key="frame" x="0.0" y="307" width="414" height="418"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rW2-oe-Rfw"/>
@@ -674,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2z-SM-6HE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615" y="677"/>
+            <point key="canvasLocation" x="3541.2213740458014" y="676.76056338028172"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="5fv-bZ-uK2">
@@ -816,6 +826,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VR-UQ-c4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3985" y="-96"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="SK0-H1-eKf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="baA-KA-k1I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Messages" image="iconMessage" id="diQ-l2-kgX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2aC-Kt-x8l">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q5g-x4-wSg" kind="relationship" relationship="rootViewController" id="iMW-6d-74r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdW-c7-2kZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.6488549618321" y="676.76056338028172"/>
         </scene>
     </scenes>
     <resources>
