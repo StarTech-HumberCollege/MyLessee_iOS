@@ -15,6 +15,7 @@ class HomeImageCell: UITableViewCell {
     
     @IBOutlet weak var bodyTextLabel: UILabel!
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
