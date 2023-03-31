@@ -13,6 +13,8 @@
 		8DF06CBA29D6109800D8F22C /* HomeTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CB829D6109800D8F22C /* HomeTextCell.swift */; };
 		8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB929D6109800D8F22C /* HomeTextCell.xib */; };
 		8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CBC29D617A600D8F22C /* HomeViewController.swift */; };
+		8DF06CC029D663F900D8F22C /* HomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */; };
+		8DF06CC129D663F900D8F22C /* HomeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */; };
 		B81F4DD429D6317700F93163 /* SATextField_NewListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD329D6317700F93163 /* SATextField_NewListing.swift */; };
 		B81F4DD929D6333400F93163 /* MyListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */; };
 		B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD729D6333400F93163 /* NewListingViewController.swift */; };
@@ -37,6 +39,8 @@
 		8DF06CB829D6109800D8F22C /* HomeTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextCell.swift; sourceTree = "<group>"; };
 		8DF06CB929D6109800D8F22C /* HomeTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTextCell.xib; sourceTree = "<group>"; };
 		8DF06CBC29D617A600D8F22C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImageCell.swift; sourceTree = "<group>"; };
+		8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeImageCell.xib; sourceTree = "<group>"; };
 		B81F4DD329D6317700F93163 /* SATextField_NewListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATextField_NewListing.swift; sourceTree = "<group>"; };
 		B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewCell.swift; sourceTree = "<group>"; };
 		B81F4DD729D6333400F93163 /* NewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListingViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				B81F4DDC29D6334B00F93163 /* MyListing.storyboard */,
 				B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */,
 				B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */,
+				8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */,
+				8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF06CC129D663F900D8F22C /* HomeImageCell.xib in Resources */,
 				B8CF3E6629D4803E00DA2334 /* LaunchScreen.storyboard in Resources */,
 				8DF06CB729D6093E00D8F22C /* Home.storyboard in Resources */,
 				B8CF3E6329D4803E00DA2334 /* Assets.xcassets in Resources */,
@@ -204,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF06CC029D663F900D8F22C /* HomeImageCell.swift in Sources */,
 				B8CF3E5E29D4803B00DA2334 /* ViewController.swift in Sources */,
 				B8CF3E6E29D5085000DA2334 /* Messages_TableViewController.swift in Sources */,
 				B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */,

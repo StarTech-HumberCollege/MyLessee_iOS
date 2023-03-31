@@ -29,10 +29,9 @@ class HomeViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 200
         
         tableView.register(UINib(nibName: "HomeTextCell", bundle: nil), forCellReuseIdentifier: "HomeTextCell")
+        tableView.register(UINib(nibName: "HomeImageCell", bundle: nil), forCellReuseIdentifier: "HomeImageCell")
     }
 
 }
@@ -43,11 +42,11 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath) as! HomeTextCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeImageCell", for: indexPath)
         
-        cell.nameLabel.text = posts[indexPath.row].name
-        cell.bodyTextLabel.text = posts[indexPath.row].text
-        cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+//        cell.nameLabel.text = posts[indexPath.row].name
+//        cell.bodyTextLabel.text = posts[indexPath.row].text
+//        cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
         
         return cell
     }
