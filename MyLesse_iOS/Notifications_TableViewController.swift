@@ -10,10 +10,10 @@ import UIKit
 class Notifications_TableViewController: UITableViewController {
 
     //Data for TableViews
-    let data : [( action: String, notification : String, img : String)] = [( "Alvaro invited you to", "MyLessee Connect", "message_photo_0"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1")]
+    let data : [( action: String, notification : String, img : String)] = [( "Alvaro invited you to", "MyLessee Connect", "alvaro"),("Anton liked your","Comment published on March 21","anton"),("Tuyi commentend on your","Post published on March 20","tuyi"),("George just joined","MyLessee Connect","george"),("Gonzalo wants to connect with you","MyLessee Connect","message_photo_2")]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Notifications"
+        //self.title = "Notifications"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,7 +40,7 @@ class Notifications_TableViewController: UITableViewController {
         //************************** Configure tableview **************************
         tableView.rowHeight = 100
         let cell = tableView.dequeueReusableCell(withIdentifier: "Notifications_TableViewCell", for: indexPath) as! Notifications_TableViewCell
-//        cell.textLabel?.text = " HOLA"
+
         cell.notification_img.image = UIImage(named: data[indexPath.item].img)
         cell.notification_action.text = data[indexPath.item].action
         cell.notification_notification.text = data[indexPath.item].notification

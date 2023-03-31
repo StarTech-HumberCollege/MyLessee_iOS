@@ -169,7 +169,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vS5-np-aLY"/>
+                    <navigationItem key="navigationItem" id="dOp-6D-PMV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUh-MK-p8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -547,69 +547,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uF-EU-qzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1333" y="215"/>
-        </scene>
-        <!--Notifications-->
-        <scene sceneID="Nyn-Yl-Twg">
-            <objects>
-                <tableViewController storyboardIdentifier="Notifications_TableViewController" id="WBd-k9-V7T" userLabel="Notifications" customClass="Notifications_TableViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ab2-ta-qZu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Notifications_TableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Notifications_TableViewCell" rowHeight="104" id="E4m-SA-Ocn" customClass="Notifications_TableViewCell" customModule="MyLesse_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="104"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E4m-SA-Ocn" id="im5-se-7iO">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="104"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="notifications_action" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sB1-gc-Fdj">
-                                            <rect key="frame" x="97" y="-4" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="notifications_img" translatesAutoresizingMaskIntoConstraints="NO" id="LEp-1z-V0M">
-                                            <rect key="frame" x="27" y="7" width="43" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="43" id="ziy-0j-F6l"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="notifications_notification" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-dH-Et8">
-                                            <rect key="frame" x="97" y="25" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="LEp-1z-V0M" secondAttribute="bottom" constant="56" id="BVL-7M-UXv"/>
-                                        <constraint firstItem="sB1-gc-Fdj" firstAttribute="leading" secondItem="LEp-1z-V0M" secondAttribute="trailing" constant="27" id="LXJ-m8-7nY"/>
-                                        <constraint firstItem="sB1-gc-Fdj" firstAttribute="leading" secondItem="eIM-dH-Et8" secondAttribute="leading" id="SBW-NH-fgs"/>
-                                        <constraint firstItem="LEp-1z-V0M" firstAttribute="top" secondItem="im5-se-7iO" secondAttribute="topMargin" constant="-4" id="W9X-Ui-Hrg"/>
-                                        <constraint firstItem="eIM-dH-Et8" firstAttribute="top" secondItem="sB1-gc-Fdj" secondAttribute="bottom" constant="8" id="XWn-rs-nji"/>
-                                        <constraint firstItem="sB1-gc-Fdj" firstAttribute="top" secondItem="im5-se-7iO" secondAttribute="topMargin" constant="-15" id="j2y-ME-wgK"/>
-                                        <constraint firstItem="LEp-1z-V0M" firstAttribute="leading" secondItem="im5-se-7iO" secondAttribute="leadingMargin" constant="7" id="nad-4V-ueb"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="notification_action" destination="sB1-gc-Fdj" id="JL5-zc-x2h"/>
-                                    <outlet property="notification_img" destination="LEp-1z-V0M" id="en8-tE-hDV"/>
-                                    <outlet property="notification_notification" destination="eIM-dH-Et8" id="h3D-9d-wI2"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="WBd-k9-V7T" id="U3s-yp-q7d"/>
-                            <outlet property="delegate" destination="WBd-k9-V7T" id="JOE-x5-ndI"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="YIE-x6-GZY"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJW-f2-rjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="971.7557251908396" y="676.76056338028172"/>
         </scene>
         <!--MyListings-->
         <scene sceneID="Svw-0c-IVS">

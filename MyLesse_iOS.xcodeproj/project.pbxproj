@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FBFE86F29D68D15008D0825 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBFE86E29D68D15008D0825 /* Notifications.storyboard */; };
 		8D90F93329D5522000D85E8A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D90F93229D5522000D85E8A /* Account.storyboard */; };
 		8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE5A6829D48468000EC090 /* ViewController2test.swift */; };
 		8DF06CB729D6093E00D8F22C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB629D6093E00D8F22C /* Home.storyboard */; };
@@ -33,10 +32,10 @@
 		B8CF3E6629D4803E00DA2334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CF3E6429D4803E00DA2334 /* LaunchScreen.storyboard */; };
 		B8CF3E6E29D5085000DA2334 /* Messages_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */; };
 		B8CF3E7029D5086300DA2334 /* Messages_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */; };
+		B8D771CF29D6BBD600E03187 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D771CE29D6BBD600E03187 /* Notifications.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7FBFE86E29D68D15008D0825 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		8D90F93229D5522000D85E8A /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		8DBE5A6829D48468000EC090 /* ViewController2test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2test.swift; sourceTree = "<group>"; };
 		8DF06CB629D6093E00D8F22C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		B8CF3E6729D4803E00DA2334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages_TableViewController.swift; sourceTree = "<group>"; };
 		B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages_TableViewCell.swift; sourceTree = "<group>"; };
+		B8D771CE29D6BBD600E03187 /* Notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,7 @@
 		B81F3AD929D674890008CBDB /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				B8D771CE29D6BBD600E03187 /* Notifications.storyboard */,
 				B839525929D679300093E2EE /* Notifications_TableViewController.swift */,
 				B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */,
 			);
@@ -146,7 +147,6 @@
 				B81F4DDC29D6334B00F93163 /* MyListing.storyboard */,
 				B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */,
 				B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */,
-				7FBFE86E29D68D15008D0825 /* Notifications.storyboard */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";
@@ -210,11 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DF06CC129D663F900D8F22C /* HomeImageCell.xib in Resources */,
-				7FBFE86F29D68D15008D0825 /* Notifications.storyboard in Resources */,
 				B8CF3E6629D4803E00DA2334 /* LaunchScreen.storyboard in Resources */,
 				8DF06CB729D6093E00D8F22C /* Home.storyboard in Resources */,
 				B8CF3E6329D4803E00DA2334 /* Assets.xcassets in Resources */,
 				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
+				B8D771CF29D6BBD600E03187 /* Notifications.storyboard in Resources */,
 				B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
 				B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */,
