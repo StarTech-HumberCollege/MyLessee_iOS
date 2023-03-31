@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     
     var post3 = (name: "Bill Robertson", profile:"sponsor", text: "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto")
     
-    var posts = [(String, String, String)]()
+    var posts = [(name: String, profile: String, text: String)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath) as! HomeTextCell
         
+        cell.nameLabel.text = posts[indexPath.row].name
+        cell.bodyTextLabel.text = posts[indexPath.row].text
+        cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
         
         return cell
     }
