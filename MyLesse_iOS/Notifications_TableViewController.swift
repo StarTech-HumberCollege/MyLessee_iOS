@@ -13,7 +13,7 @@ class Notifications_TableViewController: UITableViewController {
     let data : [( action: String, notification : String, img : String)] = [( "Alvaro invited you to", "MyLessee Connect", "message_photo_0"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1"),("Anton liked your","Comment published on March 21","message_photo_1")]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Notifications"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,7 +26,7 @@ class Notifications_TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
