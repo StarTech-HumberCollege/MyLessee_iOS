@@ -23,7 +23,7 @@ class MyListingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "My Listing"
+        //self.title = "My Listing"
         
         initAppartmentsList()
     }

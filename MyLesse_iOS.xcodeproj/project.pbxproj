@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D90F93329D5522000D85E8A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D90F93229D5522000D85E8A /* Account.storyboard */; };
-		8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE5A6829D48468000EC090 /* ViewController2test.swift */; };
 		8DF06CB729D6093E00D8F22C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB629D6093E00D8F22C /* Home.storyboard */; };
 		8DF06CBA29D6109800D8F22C /* HomeTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CB829D6109800D8F22C /* HomeTextCell.swift */; };
 		8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CB929D6109800D8F22C /* HomeTextCell.xib */; };
@@ -21,9 +20,9 @@
 		B81F4DD929D6333400F93163 /* MyListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */; };
 		B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD729D6333400F93163 /* NewListingViewController.swift */; };
 		B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */; };
-		B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDC29D6334B00F93163 /* MyListing.storyboard */; };
 		B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */; };
 		B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */; };
+		B821812729D787FD0063FD72 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B821812629D787FD0063FD72 /* MyListing.storyboard */; };
 		B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525929D679300093E2EE /* Notifications_TableViewController.swift */; };
 		B839525C29D67A990093E2EE /* Notifications_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		8D90F93229D5522000D85E8A /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		8DBE5A6829D48468000EC090 /* ViewController2test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2test.swift; sourceTree = "<group>"; };
 		8DF06CB629D6093E00D8F22C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8DF06CB829D6109800D8F22C /* HomeTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextCell.swift; sourceTree = "<group>"; };
 		8DF06CB929D6109800D8F22C /* HomeTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTextCell.xib; sourceTree = "<group>"; };
@@ -52,9 +50,9 @@
 		B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewCell.swift; sourceTree = "<group>"; };
 		B81F4DD729D6333400F93163 /* NewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListingViewController.swift; sourceTree = "<group>"; };
 		B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewController.swift; sourceTree = "<group>"; };
-		B81F4DDC29D6334B00F93163 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListing.storyboard; sourceTree = "<group>"; };
 		B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleMessage.storyboard; sourceTree = "<group>"; };
 		B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMessageViewController.swift; sourceTree = "<group>"; };
+		B821812629D787FD0063FD72 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyListing.storyboard; path = ../../../../../myl/MyLessee_iOS/MyLesse_iOS/MyListing.storyboard; sourceTree = "<group>"; };
 		B839525929D679300093E2EE /* Notifications_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewController.swift; path = MyLesse_iOS/Notifications_TableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewCell.swift; path = MyLesse_iOS/Notifications_TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,11 +100,21 @@
 		B81F4DD529D6332400F93163 /* MyListings */ = {
 			isa = PBXGroup;
 			children = (
+				B821812629D787FD0063FD72 /* MyListing.storyboard */,
 				B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */,
 				B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */,
 				B81F4DD729D6333400F93163 /* NewListingViewController.swift */,
 			);
 			path = MyListings;
+			sourceTree = "<group>";
+		};
+		B821812829D788130063FD72 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				8DF06CC729D692F000D8F22C /* GalleryCollectionCollectionViewController.swift */,
+				8DF06CC629D692F000D8F22C /* GalleryCollectionViewCell.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 		B8CF3E4D29D4803B00DA2334 = {
@@ -128,6 +136,8 @@
 		B8CF3E5829D4803B00DA2334 /* MyLesse_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B8E5F38F29D7876300C2D661 /* Messages */,
+				B8E5F38E29D7874400C2D661 /* Home */,
 				B81F3AD929D674890008CBDB /* Notifications */,
 				B81F4DD529D6332400F93163 /* MyListings */,
 				B81F4DD229D6311E00F93163 /* Custom Views */,
@@ -135,26 +145,37 @@
 				B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */,
 				B8CF3E5D29D4803B00DA2334 /* ViewController.swift */,
 				B8CF3E5F29D4803B00DA2334 /* Main.storyboard */,
-				8DF06CB629D6093E00D8F22C /* Home.storyboard */,
-				8DF06CBC29D617A600D8F22C /* HomeViewController.swift */,
 				8D90F93229D5522000D85E8A /* Account.storyboard */,
 				B8CF3E6229D4803E00DA2334 /* Assets.xcassets */,
 				B8CF3E6429D4803E00DA2334 /* LaunchScreen.storyboard */,
 				B8CF3E6729D4803E00DA2334 /* Info.plist */,
-				8DBE5A6829D48468000EC090 /* ViewController2test.swift */,
-				B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */,
-				B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */,
+			);
+			path = MyLesse_iOS;
+			sourceTree = "<group>";
+		};
+		B8E5F38E29D7874400C2D661 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8DF06CBC29D617A600D8F22C /* HomeViewController.swift */,
+				B821812829D788130063FD72 /* Gallery */,
+				8DF06CB629D6093E00D8F22C /* Home.storyboard */,
 				8DF06CBE29D663F900D8F22C /* HomeImageCell.swift */,
 				8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */,
 				8DF06CB829D6109800D8F22C /* HomeTextCell.swift */,
 				8DF06CB929D6109800D8F22C /* HomeTextCell.xib */,
-				B81F4DDC29D6334B00F93163 /* MyListing.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B8E5F38F29D7876300C2D661 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				B8CF3E6D29D5085000DA2334 /* Messages_TableViewController.swift */,
+				B8CF3E6F29D5086300DA2334 /* Messages_TableViewCell.swift */,
 				B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */,
 				B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */,
-				8DF06CC729D692F000D8F22C /* GalleryCollectionCollectionViewController.swift */,
-				8DF06CC629D692F000D8F22C /* GalleryCollectionViewCell.swift */,
 			);
-			path = MyLesse_iOS;
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,8 +242,8 @@
 				B8CF3E6329D4803E00DA2334 /* Assets.xcassets in Resources */,
 				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
 				B8D771CF29D6BBD600E03187 /* Notifications.storyboard in Resources */,
-				B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
+				B821812729D787FD0063FD72 /* MyListing.storyboard in Resources */,
 				B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */,
 				8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */,
 			);
@@ -241,7 +262,6 @@
 				B8CF3E6E29D5085000DA2334 /* Messages_TableViewController.swift in Sources */,
 				B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */,
 				8DF06CC829D692F000D8F22C /* GalleryCollectionViewCell.swift in Sources */,
-				8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */,
 				B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */,
 				B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */,
 				8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */,

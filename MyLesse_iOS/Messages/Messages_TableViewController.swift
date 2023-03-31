@@ -10,7 +10,7 @@ import UIKit
 class Messages_TableViewController: UITableViewController {
    
     //Data for TableViews
-    let data : [(name: String, message: String, date : String, img : String, premium : Bool)] = [("Tuyi Chen", "Hi Alvaro! I was referred to you by Anton, he told me you’re looking to rent your ...", "20/03/2023", "message_photo_0", false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1", true),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1",false)]
+    let data : [(name: String, message: String, date : String, img : String, premium : Bool)] = [("Tuyi Chen", "Hi Alvaro! I was referred to you by Anton, he told me you’re looking to rent your ...", "20/03/2023", "message_photo_0", false),("Anton Vinokurov", "Hey man, i have someone interested in your apartment, she will contact you","20/03/2023","message_photo_1", true),("George Wang", "Hey there! I saw your posting about a 2 bed apartment, i would like to see it.","19/03/2023","george",false),("Gonzalo Mendoza", "Sure thing!, i'm usually free during the weekends. Please book an appointment","19/03/2023","messagePhoto1",true)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
