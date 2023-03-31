@@ -13,7 +13,7 @@ private let reuseIdentifier = "Cell"
 class GalleryCollectionCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     // hardcoded image data
-    var images = ["image1", "image2", "image3"]
+    var images = ["image1", "image2", "image3", "myListingHouse3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
