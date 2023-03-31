@@ -71,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81F3AD929D674890008CBDB /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		B81F4DD229D6311E00F93163 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +115,7 @@
 		B8CF3E5829D4803B00DA2334 /* MyLesse_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B81F3AD929D674890008CBDB /* Notifications */,
 				B81F4DD529D6332400F93163 /* MyListings */,
 				B81F4DD229D6311E00F93163 /* Custom Views */,
 				B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */,
