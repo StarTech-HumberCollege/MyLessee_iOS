@@ -78,7 +78,7 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B78-NG-tZJ" userLabel="Image Stack View">
-                        <rect key="frame" x="60" y="154" width="263" height="189"/>
+                        <rect key="frame" x="85" y="154" width="263" height="189"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="avc-mM-0LA">
                                 <rect key="frame" x="0.0" y="0.0" width="263" height="92"/>
@@ -129,7 +129,7 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
                     <constraint firstItem="fyy-L5-gOf" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leading" constant="29" id="ZSN-ZZ-Ins"/>
                     <constraint firstItem="dD0-VW-AA1" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="80" id="ZUc-zU-Zno"/>
                     <constraint firstItem="fyy-L5-gOf" firstAttribute="top" secondItem="65t-KP-OHE" secondAttribute="top" constant="15" id="bMk-zJ-dGs"/>
-                    <constraint firstItem="B78-NG-tZJ" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="40" id="dVv-Dc-udW"/>
+                    <constraint firstItem="B78-NG-tZJ" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="65" id="dVv-Dc-udW"/>
                     <constraint firstItem="SeV-r5-MZL" firstAttribute="leading" secondItem="fyy-L5-gOf" secondAttribute="trailing" constant="5" id="heb-u9-GgZ"/>
                     <constraint firstItem="CZn-Gn-MAR" firstAttribute="top" secondItem="B78-NG-tZJ" secondAttribute="bottom" constant="12" id="jR2-Jc-PQq"/>
                     <constraint firstItem="CZn-Gn-MAR" firstAttribute="centerX" secondItem="65t-KP-OHE" secondAttribute="centerX" constant="20" id="rzS-P5-hYJ"/>

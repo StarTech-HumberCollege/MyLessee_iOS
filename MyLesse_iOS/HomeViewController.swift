@@ -42,13 +42,25 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeImageCell", for: indexPath) as! HomeImageCell
         
-        cell.nameLabel.text = posts[indexPath.row].name
-        cell.bodyTextLabel.text = posts[indexPath.row].text
-        cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+        if indexPath.row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeImageCell", for: indexPath) as! HomeImageCell
+            
+            cell.nameLabel.text = posts[indexPath.row].name
+            cell.bodyTextLabel.text = posts[indexPath.row].text
+            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTextCell", for: indexPath) as! HomeTextCell
+            
+            cell.nameLabel.text = posts[indexPath.row].name
+            cell.bodyTextLabel.text = posts[indexPath.row].text
+            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+            
+            return cell
+        }
         
-        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
