@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeImageCell" rowHeight="190" id="wCa-Uk-c9T" userLabel="HomeImageCell" customClass="HomeImageCell" customModule="MyLesse_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="390"/>
+            <rect key="frame" x="0.0" y="0.0" width="365" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wCa-Uk-c9T" id="65t-KP-OHE">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="390"/>
+                <rect key="frame" x="0.0" y="0.0" width="365" height="400"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuyi" translatesAutoresizingMaskIntoConstraints="NO" id="fyy-L5-gOf">
@@ -26,8 +26,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li7-PC-7xF">
-                        <rect key="frame" x="65" y="33.000000000000007" width="250" height="107.66666666666669"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li7-PC-7xF">
+                        <rect key="frame" x="65" y="33" width="250" height="109"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="250" id="9Je-Vi-AR5"/>
                         </constraints>
@@ -38,14 +38,14 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line1" translatesAutoresizingMaskIntoConstraints="NO" id="CZn-Gn-MAR">
-                        <rect key="frame" x="72.666666666666686" y="345" width="260" height="0.33333333333331439"/>
+                        <rect key="frame" x="72.666666666666686" y="355" width="260" height="0.33333333333331439"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="Bke-Te-dc4"/>
                             <constraint firstAttribute="width" constant="260" id="ZPu-m0-XL9"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dD0-VW-AA1">
-                        <rect key="frame" x="100.00000000000001" y="350.33333333333331" width="60.666666666666671" height="23.666666666666686"/>
+                        <rect key="frame" x="100.00000000000001" y="360.33333333333331" width="60.666666666666671" height="23.666666666666686"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-Kr-Qhy">
                                 <rect key="frame" x="0.0" y="0.0" width="15" height="23.666666666666668"/>
@@ -77,31 +77,63 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
                             </stackView>
                         </subviews>
                     </stackView>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EcA-wg-8m3">
-                        <rect key="frame" x="65" y="150.66666666666663" width="235" height="184.33333333333337"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2jW-YF-Ly1">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                    </collectionView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B78-NG-tZJ" userLabel="Image Stack View">
+                        <rect key="frame" x="60" y="154" width="263" height="189"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="avc-mM-0LA">
+                                <rect key="frame" x="0.0" y="0.0" width="263" height="92"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-TB-Lfy">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="3bH-VZ-6eq"/>
+                                            <constraint firstAttribute="height" constant="92" id="BXn-w0-Qyr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="QPL-hI-nFJ">
+                                        <rect key="frame" x="134" y="0.0" width="129" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="dtt-4Q-uAp"/>
+                                            <constraint firstAttribute="width" constant="129" id="fik-po-voQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cVm-f2-CxB">
+                                <rect key="frame" x="0.0" y="97" width="263" height="92"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="qQz-Gi-Iua">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="kbQ-og-nUp"/>
+                                            <constraint firstAttribute="width" constant="129" id="xCx-ix-M0t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image4" translatesAutoresizingMaskIntoConstraints="NO" id="rcQ-Iw-LPD">
+                                        <rect key="frame" x="134" y="0.0" width="129" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="CTI-2x-MjM"/>
+                                            <constraint firstAttribute="height" constant="92" id="oDZ-7f-pRm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="li7-PC-7xF" firstAttribute="top" secondItem="SeV-r5-MZL" secondAttribute="bottom" id="29N-kD-ewc"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="EcA-wg-8m3" secondAttribute="trailing" constant="45" id="2jO-0y-kdz"/>
-                    <constraint firstItem="CZn-Gn-MAR" firstAttribute="top" secondItem="EcA-wg-8m3" secondAttribute="bottom" constant="10" id="FB9-Fc-tc3"/>
                     <constraint firstItem="li7-PC-7xF" firstAttribute="leading" secondItem="fyy-L5-gOf" secondAttribute="trailing" constant="5" id="IBl-IY-SBa"/>
                     <constraint firstItem="SeV-r5-MZL" firstAttribute="top" secondItem="65t-KP-OHE" secondAttribute="top" constant="15" id="MDS-A0-5Ct"/>
-                    <constraint firstItem="EcA-wg-8m3" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="45" id="Pcd-y9-Gb8"/>
                     <constraint firstItem="dD0-VW-AA1" firstAttribute="top" secondItem="CZn-Gn-MAR" secondAttribute="bottom" constant="5" id="RQG-y7-2Hq"/>
                     <constraint firstItem="fyy-L5-gOf" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leading" constant="29" id="ZSN-ZZ-Ins"/>
                     <constraint firstItem="dD0-VW-AA1" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="80" id="ZUc-zU-Zno"/>
-                    <constraint firstItem="EcA-wg-8m3" firstAttribute="top" secondItem="li7-PC-7xF" secondAttribute="bottom" constant="10" id="aix-o6-aWk"/>
                     <constraint firstItem="fyy-L5-gOf" firstAttribute="top" secondItem="65t-KP-OHE" secondAttribute="top" constant="15" id="bMk-zJ-dGs"/>
+                    <constraint firstItem="B78-NG-tZJ" firstAttribute="leading" secondItem="65t-KP-OHE" secondAttribute="leadingMargin" constant="40" id="dVv-Dc-udW"/>
                     <constraint firstItem="SeV-r5-MZL" firstAttribute="leading" secondItem="fyy-L5-gOf" secondAttribute="trailing" constant="5" id="heb-u9-GgZ"/>
+                    <constraint firstItem="CZn-Gn-MAR" firstAttribute="top" secondItem="B78-NG-tZJ" secondAttribute="bottom" constant="12" id="jR2-Jc-PQq"/>
                     <constraint firstItem="CZn-Gn-MAR" firstAttribute="centerX" secondItem="65t-KP-OHE" secondAttribute="centerX" constant="20" id="rzS-P5-hYJ"/>
+                    <constraint firstItem="B78-NG-tZJ" firstAttribute="top" secondItem="li7-PC-7xF" secondAttribute="bottom" constant="12" id="w29-X6-0NE"/>
                     <constraint firstAttribute="bottom" secondItem="dD0-VW-AA1" secondAttribute="bottom" constant="16" id="xpY-AX-6nh"/>
                     <constraint firstAttribute="trailing" secondItem="li7-PC-7xF" secondAttribute="trailing" constant="50" id="zkD-Va-TNb"/>
                 </constraints>
@@ -109,7 +141,6 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
             <viewLayoutGuide key="safeArea" id="6f2-aO-sVR"/>
             <connections>
                 <outlet property="bodyTextLabel" destination="li7-PC-7xF" id="Crt-bc-n9J"/>
-                <outlet property="collectionView" destination="EcA-wg-8m3" id="zsn-56-58R"/>
                 <outlet property="nameLabel" destination="SeV-r5-MZL" id="v7X-Xt-0Cv"/>
                 <outlet property="profileImageView" destination="fyy-L5-gOf" id="eZa-bE-CnS"/>
             </connections>
@@ -118,11 +149,12 @@ I’m in search of a 2 bed apartment to share with my sister in the midtown area
     </objects>
     <resources>
         <image name="commentIcon" width="15" height="15"/>
+        <image name="image1" width="129" height="92"/>
+        <image name="image2" width="129" height="92"/>
+        <image name="image3" width="129" height="92"/>
+        <image name="image4" width="137" height="100"/>
         <image name="likeIcon" width="15" height="15"/>
         <image name="line1" width="318" height="0.66666668653488159"/>
         <image name="tuyi" width="45" height="45"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
