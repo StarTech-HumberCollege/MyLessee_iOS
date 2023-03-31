@@ -86,13 +86,38 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alvaro" translatesAutoresizingMaskIntoConstraints="NO" id="kGW-0j-mPN">
+                                <rect key="frame" x="17" y="78" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Bz-g8-aRU"/>
+                                    <constraint firstAttribute="width" constant="50" id="7dK-5u-I44"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alvaro Beltran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2N-bO-Jid">
+                                <rect key="frame" x="17" y="135" width="98" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts : 124 | Listings : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW7-aA-vHn">
+                                <rect key="frame" x="17.000000000000007" y="157" width="114.66666666666669" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="q2N-bO-Jid" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="1Hd-Oe-PV3"/>
+                            <constraint firstItem="WW7-aA-vHn" firstAttribute="top" secondItem="q2N-bO-Jid" secondAttribute="bottom" constant="5" id="VeD-sv-rVJ"/>
+                            <constraint firstItem="WW7-aA-vHn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="XU4-OF-jV9"/>
                             <constraint firstItem="Ry2-RW-VIf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="148" id="gSy-ua-EdY"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ry2-RW-VIf" secondAttribute="trailing" constant="17" id="kKF-Dd-Kzr"/>
+                            <constraint firstItem="q2N-bO-Jid" firstAttribute="top" secondItem="kGW-0j-mPN" secondAttribute="bottom" constant="7" id="sis-1H-rqV"/>
+                            <constraint firstItem="kGW-0j-mPN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="19" id="y1d-S9-S5f"/>
                             <constraint firstItem="Ry2-RW-VIf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="yra-dz-gAj"/>
+                            <constraint firstItem="kGW-0j-mPN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="zlg-D1-4yw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -107,6 +132,7 @@
         <image name="ListOutLine" width="35" height="35"/>
         <image name="ProfileOutline" width="35" height="35"/>
         <image name="SettingsOutline" width="35" height="35"/>
+        <image name="alvaro" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
