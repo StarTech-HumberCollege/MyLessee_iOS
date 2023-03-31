@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="Account_ViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +105,20 @@
                                 <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCO-FR-Ukk">
+                                <rect key="frame" x="279" y="696" width="97" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="12" height="12"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" red="0.83137255909999996" green="0.4588235021" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <directionalEdgeInsets key="contentInsets" top="5" leading="8" bottom="5" trailing="8"/>
+                                    <color key="baseForegroundColor" red="0.83137255909999996" green="0.4588235021" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,6 +134,9 @@
                             <constraint firstItem="kGW-0j-mPN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="zlg-D1-4yw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn_logOut" destination="yCO-FR-Ukk" id="Kqf-hc-ceR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

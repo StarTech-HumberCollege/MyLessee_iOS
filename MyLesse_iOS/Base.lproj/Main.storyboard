@@ -39,7 +39,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="alvaro"/>
                                             <connections>
-                                                <segue destination="u8u-sD-ydi" kind="show" id="tku-uE-lHt"/>
+                                                <segue destination="u8u-sD-ydi" kind="presentation" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="tku-uE-lHt"/>
                                             </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="247" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="logoNoBg1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-gH-WZS">

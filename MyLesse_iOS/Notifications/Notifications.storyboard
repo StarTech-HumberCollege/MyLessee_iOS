@@ -34,7 +34,7 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="alvaro"/>
                                                     <connections>
-                                                        <segue destination="WhG-Ai-4ut" kind="show" id="Stw-QJ-3nB"/>
+                                                        <segue destination="WhG-Ai-4ut" kind="presentation" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="Stw-QJ-3nB"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="247" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="logoNoBg1" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-ja-FNS">

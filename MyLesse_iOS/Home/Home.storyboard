@@ -46,7 +46,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="alvaro"/>
                                                 <connections>
-                                                    <segue destination="I16-PD-Uik" kind="show" id="DCZ-mX-Eu9"/>
+                                                    <segue destination="I16-PD-Uik" kind="presentation" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="mz2-e9-4ba"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="246" verticalHuggingPriority="247" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="logoNoBg1" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-fY-Ri7">
