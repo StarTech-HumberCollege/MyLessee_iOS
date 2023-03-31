@@ -22,6 +22,8 @@
 		B81F4DDD29D6334B00F93163 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDC29D6334B00F93163 /* MyListing.storyboard */; };
 		B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */; };
 		B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */; };
+		B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525929D679300093E2EE /* Notifications_TableViewController.swift */; };
+		B839525C29D67A990093E2EE /* Notifications_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
 		B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */; };
 		B8CF3E5E29D4803B00DA2334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5D29D4803B00DA2334 /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		B81F4DDC29D6334B00F93163 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListing.storyboard; sourceTree = "<group>"; };
 		B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleMessage.storyboard; sourceTree = "<group>"; };
 		B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMessageViewController.swift; sourceTree = "<group>"; };
+		B839525929D679300093E2EE /* Notifications_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewController.swift; path = MyLesse_iOS/Notifications_TableViewController.swift; sourceTree = SOURCE_ROOT; };
+		B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewCell.swift; path = MyLesse_iOS/Notifications_TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		B81F3AD929D674890008CBDB /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				B839525929D679300093E2EE /* Notifications_TableViewController.swift */,
+				B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -224,8 +230,10 @@
 				B8CF3E6E29D5085000DA2334 /* Messages_TableViewController.swift in Sources */,
 				B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */,
 				8DBE5A6929D48468000EC090 /* ViewController2test.swift in Sources */,
+				B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */,
 				B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */,
 				8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */,
+				B839525C29D67A990093E2EE /* Notifications_TableViewCell.swift in Sources */,
 				B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */,
 				B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */,
 				B81F4DD429D6317700F93163 /* SATextField_NewListing.swift in Sources */,

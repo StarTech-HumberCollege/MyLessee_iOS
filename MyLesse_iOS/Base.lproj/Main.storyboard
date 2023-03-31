@@ -183,13 +183,13 @@
         <!--Notification-->
         <scene sceneID="gWK-HP-fw0">
             <objects>
-                <viewController id="x5O-fc-wWV" sceneMemberID="viewController">
+                <viewController id="x5O-fc-wWV" customClass="Notifications_TableViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Xw0-r6-s2I">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" id="LFg-Tr-Tmt">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="89"/>
+                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" id="LFg-Tr-Tmt">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="105"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jHS-5u-xhZ">
@@ -212,7 +212,7 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XmU-ML-9ga">
-                                    <rect key="frame" x="0.0" y="27" width="393" height="62"/>
+                                    <rect key="frame" x="0.0" y="43" width="393" height="62"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eh-ff-8Qm">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
@@ -230,79 +230,56 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="FuB-Ve-awJ" secondAttribute="bottom" constant="10" id="JYV-fy-lAP"/>
-                                        <constraint firstAttribute="bottom" secondItem="FuB-Ve-awJ" secondAttribute="bottom" constant="10" id="RaO-sg-JGV"/>
-                                    </constraints>
                                 </stackView>
                             </subviews>
                         </stackView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" restorationIdentifier="Messages_TableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="Messages_TableViewCell" rowHeight="139" id="Obm-zZ-hqg" customClass="Messages_TableViewCell" customModule="MyLesse_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="139" width="393" height="139"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" restorationIdentifier="Messages_TableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="Notifications_TableViewCell" rowHeight="91" id="Obm-zZ-hqg" customClass="Messages_TableViewCell" customModule="MyLesse_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="155" width="393" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Obm-zZ-hqg" id="G2d-zU-1zq">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="139"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_img" image="message_photo_0" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Mq-ewZ">
-                                            <rect key="frame" x="11" y="14" width="67" height="97"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="notification_img" image="message_photo_0" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-Mq-ewZ">
+                                            <rect key="frame" x="11" y="14" width="67" height="66"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="67" id="Opr-ZH-icF"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_date" text="20/03/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBi-cP-iFX">
-                                            <rect key="frame" x="326" y="25" width="57" height="12"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="notification_action" text="Tuyi Chen commented on your" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-kQ-9ra">
+                                            <rect key="frame" x="86" y="18" width="251" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_msg" text="Hi Alvaro! I was referred to you by Anton, he told me you’re looking to rent your ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r0-V8-2hU">
-                                            <rect key="frame" x="83" y="45" width="294" height="66"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="notification_notification" text="Post published on March 20" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r0-V8-2hU">
+                                            <rect key="frame" x="86" y="37" width="294" height="35"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.83137255909999996" green="0.4588235021" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uk6-rm-HN6">
-                                            <rect key="frame" x="76" y="21" width="77.333333333333314" height="22"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_name" text="Tuyi Chen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-kQ-9ra">
-                                                    <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="22"/>
-                                                    <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="14"/>
-                                                    <color key="textColor" red="0.1686274707" green="0.1294117719" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_premium" image="ic_outline-verified-user" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-tg-aEE">
-                                                    <rect key="frame" x="62.333333333333343" y="0.0" width="15" height="15"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="aoE-kQ-9ra" firstAttribute="bottom" secondItem="uk6-rm-HN6" secondAttribute="bottomMargin" id="DCb-VN-kWA"/>
-                                            </constraints>
-                                        </stackView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="hmg-Mq-ewZ" firstAttribute="leading" secondItem="G2d-zU-1zq" secondAttribute="leadingMargin" constant="-9" id="204-Z9-l7s"/>
-                                        <constraint firstItem="uk6-rm-HN6" firstAttribute="top" secondItem="G2d-zU-1zq" secondAttribute="topMargin" constant="10" id="Cty-dY-Y6q"/>
                                         <constraint firstItem="hmg-Mq-ewZ" firstAttribute="top" secondItem="G2d-zU-1zq" secondAttribute="topMargin" constant="3" id="KKL-Sy-3cp"/>
-                                        <constraint firstItem="0r0-V8-2hU" firstAttribute="top" secondItem="bBi-cP-iFX" secondAttribute="bottom" constant="8" id="VyI-8n-iFe"/>
-                                        <constraint firstItem="uk6-rm-HN6" firstAttribute="leading" secondItem="G2d-zU-1zq" secondAttribute="leadingMargin" constant="56" id="abo-na-TzX"/>
                                         <constraint firstItem="0r0-V8-2hU" firstAttribute="leading" secondItem="hmg-Mq-ewZ" secondAttribute="trailing" constant="5" id="dXO-qz-bWE"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0r0-V8-2hU" secondAttribute="trailing" constant="-4" id="j5e-UJ-VGp"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="bBi-cP-iFX" secondAttribute="trailing" constant="-10" id="nUI-Kc-T7Z"/>
-                                        <constraint firstItem="uk6-rm-HN6" firstAttribute="top" secondItem="G2d-zU-1zq" secondAttribute="topMargin" id="qI8-ye-JDn"/>
                                         <constraint firstItem="hmg-Mq-ewZ" firstAttribute="bottom" secondItem="0r0-V8-2hU" secondAttribute="bottom" id="vtt-X2-29h"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="hmg-Mq-ewZ" secondAttribute="bottom" constant="17" id="wBm-x1-mGl"/>
-                                        <constraint firstItem="0r0-V8-2hU" firstAttribute="top" secondItem="uk6-rm-HN6" secondAttribute="bottom" constant="2" id="xWW-D5-c6B"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="notification_action" destination="aoE-kQ-9ra" id="8PI-bZ-RWZ"/>
+                                        <outlet property="notification_img" destination="hmg-Mq-ewZ" id="7Ch-1h-F0L"/>
+                                        <outlet property="notification_notification" destination="0r0-V8-2hU" id="APU-7p-eIb"/>
+                                    </connections>
                                 </tableViewCellContentView>
                                 <edgeInsets key="layoutMargins" top="8" left="5" bottom="8" right="8"/>
                                 <connections>
-                                    <outlet property="message_date" destination="bBi-cP-iFX" id="vRV-z0-1tb"/>
                                     <outlet property="message_img" destination="hmg-Mq-ewZ" id="XA1-pb-VGW"/>
                                     <outlet property="message_msg" destination="0r0-V8-2hU" id="mV0-BR-nZe"/>
                                     <outlet property="message_name" destination="aoE-kQ-9ra" id="Ptt-1p-N8u"/>
-                                    <outlet property="message_premium" destination="RvE-tg-aEE" id="4L9-wr-Bbv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -403,19 +380,19 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_date" text="20/03/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWk-80-EgZ">
-                                        <rect key="frame" x="326" y="25" width="57" height="12"/>
+                                        <rect key="frame" x="326" y="15" width="57" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_msg" text="Hi Alvaro! I was referred to you by Anton, he told me you’re looking to rent your ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baB-mL-qgi">
-                                        <rect key="frame" x="83" y="45" width="294" height="66"/>
+                                        <rect key="frame" x="83" y="35" width="294" height="76"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="R2i-a4-nlR">
-                                        <rect key="frame" x="76" y="21" width="77.333333333333314" height="22"/>
+                                        <rect key="frame" x="76" y="11" width="77.333333333333314" height="22"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="message_name" text="Tuyi Chen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y0-GZ-vpv">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="22"/>
@@ -902,7 +879,7 @@
         <!--Calendar-->
         <scene sceneID="5fv-bZ-uK2">
             <objects>
-                <viewController id="59k-in-gdy" customClass="CalendarViewController" customModule="tuyi_test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="59k-in-gdy" customClass="CalendarViewController" customModule="MyLesse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a2S-I4-UlN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1042,12 +1019,9 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="akarIconsChevronDown" width="22.333333969116211" height="21.666666030883789"/>
         <image name="akarIconsChevronRight" width="21" height="24"/>
-=======
         <image name="alvaro" width="50" height="50"/>
->>>>>>> 72bcb2b (changes to message UI and Notifications)
         <image name="buttonCreate" width="188" height="47"/>
         <image name="buttonLogin" width="188" height="47"/>
         <image name="calendar" width="313" height="228.33332824707031"/>
