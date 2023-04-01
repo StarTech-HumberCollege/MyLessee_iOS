@@ -22,9 +22,9 @@
 		B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */; };
 		B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */; };
 		B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */; };
-		B821812729D787FD0063FD72 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B821812629D787FD0063FD72 /* MyListing.storyboard */; };
 		B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525929D679300093E2EE /* Notifications_TableViewController.swift */; };
 		B839525C29D67A990093E2EE /* Notifications_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */; };
+		B8BAA8B729D7ABF600F87AA8 /* MyListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BAA8B629D7ABF600F87AA8 /* MyListing.storyboard */; };
 		B8C3333829D7908E003D8D32 /* Account_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C3333729D7908E003D8D32 /* Account_ViewController.swift */; };
 		B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */; };
 		B8CF3E5C29D4803B00DA2334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF3E5B29D4803B00DA2334 /* SceneDelegate.swift */; };
@@ -53,9 +53,9 @@
 		B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewController.swift; sourceTree = "<group>"; };
 		B81F4DDE29D637E800F93163 /* SingleMessage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleMessage.storyboard; sourceTree = "<group>"; };
 		B81F4DDF29D637E800F93163 /* SingleMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMessageViewController.swift; sourceTree = "<group>"; };
-		B821812629D787FD0063FD72 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyListing.storyboard; path = ../../../../../myl/MyLessee_iOS/MyLesse_iOS/MyListing.storyboard; sourceTree = "<group>"; };
 		B839525929D679300093E2EE /* Notifications_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewController.swift; path = MyLesse_iOS/Notifications_TableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B839525B29D67A990093E2EE /* Notifications_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications_TableViewCell.swift; path = MyLesse_iOS/Notifications_TableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		B8BAA8B629D7ABF600F87AA8 /* MyListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListing.storyboard; sourceTree = "<group>"; };
 		B8C3333729D7908E003D8D32 /* Account_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account_ViewController.swift; sourceTree = "<group>"; };
 		B8CF3E5629D4803B00DA2334 /* MyLesse_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesse_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF3E5929D4803B00DA2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		B81F4DD529D6332400F93163 /* MyListings */ = {
 			isa = PBXGroup;
 			children = (
-				B821812629D787FD0063FD72 /* MyListing.storyboard */,
+				B8BAA8B629D7ABF600F87AA8 /* MyListing.storyboard */,
 				B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */,
 				B81F4DD829D6333400F93163 /* MyListingTableViewController.swift */,
 				B81F4DD729D6333400F93163 /* NewListingViewController.swift */,
@@ -254,9 +254,9 @@
 				8D90F93329D5522000D85E8A /* Account.storyboard in Resources */,
 				B8D771CF29D6BBD600E03187 /* Notifications.storyboard in Resources */,
 				B8CF3E6129D4803B00DA2334 /* Main.storyboard in Resources */,
-				B821812729D787FD0063FD72 /* MyListing.storyboard in Resources */,
 				B81F4DE029D637E800F93163 /* SingleMessage.storyboard in Resources */,
 				8DF06CBB29D6109800D8F22C /* HomeTextCell.xib in Resources */,
+				B8BAA8B729D7ABF600F87AA8 /* MyListing.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
