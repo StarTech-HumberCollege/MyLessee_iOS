@@ -69,7 +69,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="j8c-rC-NJy">
                                     <rect key="frame" x="0.0" y="40" width="393" height="49"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-yX-BgL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Listings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-yX-BgL">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="1Wy-pL-hL9"/>
@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="1951.9083969465648" y="-18.30985915492958"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Account-->
         <scene sceneID="8cg-R3-6Oj">
             <objects>
-                <viewControllerPlaceholder id="3bN-2k-yy7" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Account" id="3bN-2k-yy7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uRh-2Z-VyC"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXd-vE-MVk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
