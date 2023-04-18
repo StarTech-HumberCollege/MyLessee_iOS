@@ -6,26 +6,56 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
     
-    var post1 = (name: "Tuyi Chen", profile:"tuyi", text: "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities. ")
-    
-    var post2 = (name: "Anton Vinokurov", profile:"anton", text: "3 Bedroom apartment in the heart of Toronto downtown.")
-    
-    var post3 = (name: "Bill Robertson", profile:"sponsor", text: "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto")
-    
-    var posts = [(name: String, profile: String, text: String)]()
+    var posts: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        posts.append(post1)
-        posts.append(post2)
-        posts.append(post3)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request: NSFetchRequest<Post> = Post.fetchRequest()
+        
+        do {
+            posts = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context: \(error)")
+        }
+        
+        if posts.isEmpty {
+            
+            let post1 = Post(context: context)
+            post1.name = "Tuyi Chen"
+            post1.profile = "tuyi"
+            post1.text = "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities!"
+            
+            let post2 = Post(context: context)
+            post2.name = "Anton Vinokurov"
+            post2.profile = "anton"
+            post2.text = "3 Bedroom apartment in the heart of Toronto downtown!"
+            
+            let post3 = Post(context: context)
+            post3.name = "Bill Robertson"
+            post3.profile = "sponsor"
+            post3.text = "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto!"
+            
+            appDelegate.saveContext()
+            
+            do {
+                posts = try context.fetch(request)
+            } catch {
+                print("Error fetching data from context: \(error)")
+            }
+        }
+        
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -38,7 +68,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +78,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             
             cell.nameLabel.text = posts[indexPath.row].name
             cell.bodyTextLabel.text = posts[indexPath.row].text
-            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
             
             return cell
         } else {
@@ -56,7 +86,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             
             cell.nameLabel.text = posts[indexPath.row].name
             cell.bodyTextLabel.text = posts[indexPath.row].text
-            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile)
+            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
             
             return cell
         }

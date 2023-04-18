@@ -16,6 +16,7 @@
 		8DF06CC129D663F900D8F22C /* HomeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */; };
 		8DF06CC829D692F000D8F22C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CC629D692F000D8F22C /* GalleryCollectionViewCell.swift */; };
 		8DF06CC929D692F000D8F22C /* GalleryCollectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF06CC729D692F000D8F22C /* GalleryCollectionCollectionViewController.swift */; };
+		8DF9B10A29EE32A4007B5A5C /* MyLesse_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9B10829EE32A4007B5A5C /* MyLesse_iOS.xcdatamodeld */; };
 		B81F4DD429D6317700F93163 /* SATextField_NewListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD329D6317700F93163 /* SATextField_NewListing.swift */; };
 		B81F4DD929D6333400F93163 /* MyListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */; };
 		B81F4DDA29D6333400F93163 /* NewListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F4DD729D6333400F93163 /* NewListingViewController.swift */; };
@@ -47,6 +48,7 @@
 		8DF06CBF29D663F900D8F22C /* HomeImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeImageCell.xib; sourceTree = "<group>"; };
 		8DF06CC629D692F000D8F22C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DF06CC729D692F000D8F22C /* GalleryCollectionCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionCollectionViewController.swift; sourceTree = "<group>"; };
+		8DF9B10929EE32A4007B5A5C /* MyLesse_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyLesse_iOS.xcdatamodel; sourceTree = "<group>"; };
 		B81F4DD329D6317700F93163 /* SATextField_NewListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATextField_NewListing.swift; sourceTree = "<group>"; };
 		B81F4DD629D6333400F93163 /* MyListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListingTableViewCell.swift; sourceTree = "<group>"; };
 		B81F4DD729D6333400F93163 /* NewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListingViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				B8CF3E6229D4803E00DA2334 /* Assets.xcassets */,
 				B8CF3E6429D4803E00DA2334 /* LaunchScreen.storyboard */,
 				B8CF3E6729D4803E00DA2334 /* Info.plist */,
+				8DF9B10829EE32A4007B5A5C /* MyLesse_iOS.xcdatamodeld */,
 			);
 			path = MyLesse_iOS;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				B839525A29D679310093E2EE /* Notifications_TableViewController.swift in Sources */,
 				B81F4DDB29D6333400F93163 /* MyListingTableViewController.swift in Sources */,
 				8DF06CBD29D617A600D8F22C /* HomeViewController.swift in Sources */,
+				8DF9B10A29EE32A4007B5A5C /* MyLesse_iOS.xcdatamodeld in Sources */,
 				B839525C29D67A990093E2EE /* Notifications_TableViewCell.swift in Sources */,
 				B8CF3E5A29D4803B00DA2334 /* AppDelegate.swift in Sources */,
 				B81F4DE129D637E800F93163 /* SingleMessageViewController.swift in Sources */,
@@ -502,6 +506,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8DF9B10829EE32A4007B5A5C /* MyLesse_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8DF9B10929EE32A4007B5A5C /* MyLesse_iOS.xcdatamodel */,
+			);
+			currentVersion = 8DF9B10929EE32A4007B5A5C /* MyLesse_iOS.xcdatamodel */;
+			path = MyLesse_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8CF3E4E29D4803B00DA2334 /* Project object */;
 }
