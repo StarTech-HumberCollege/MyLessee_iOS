@@ -18,8 +18,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("hello world")
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
+        
+        let storeURL = appDelegate.persistentContainer.persistentStoreCoordinator.url(for: appDelegate.persistentContainer.persistentStoreCoordinator.persistentStores.first!)
+
+            print("Core Data store URL: \(storeURL)")
         
         let request: NSFetchRequest<Post> = Post.fetchRequest()
         
@@ -33,18 +39,18 @@ class HomeViewController: UIViewController {
             
             let post1 = Post(context: context)
             post1.name = "Tuyi Chen"
-            post1.profile = "tuyi"
-            post1.text = "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities!"
+            post1.profile = UIImage(named: "tuyi")?.pngData()
+            post1.text = "Hi everyone! I’m Tuyi and just recently moved to Toronto.I’m in search of a 2 bed apartment to share with my sister in the midtown area, we are looking to pay around $2,500 plus utilities."
             
             let post2 = Post(context: context)
             post2.name = "Anton Vinokurov"
-            post2.profile = "anton"
-            post2.text = "3 Bedroom apartment in the heart of Toronto downtown!"
+            post2.profile = UIImage(named: "anton")?.pngData()
+            post2.text = "3 Bedroom apartment in the heart of Toronto downtown."
             
             let post3 = Post(context: context)
             post3.name = "Bill Robertson"
-            post3.profile = "sponsor"
-            post3.text = "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto!"
+            post3.profile = UIImage(named: "sponsor")?.pngData()
+            post3.text = "For all your real estate needs, Bill Robertson Real Estate agency is the best choice. We have 4 offices in the greater Toronto."
             
             appDelegate.saveContext()
             
@@ -78,7 +84,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             
             cell.nameLabel.text = posts[indexPath.row].name
             cell.bodyTextLabel.text = posts[indexPath.row].text
-            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
+            //            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
+            if let imageData = posts[indexPath.row].profile {
+                cell.profileImageView.image = UIImage(data: imageData)
+            }
             
             return cell
         } else {
@@ -86,8 +95,10 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             
             cell.nameLabel.text = posts[indexPath.row].name
             cell.bodyTextLabel.text = posts[indexPath.row].text
-            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
-            
+//            cell.profileImageView.image = UIImage(named: posts[indexPath.row].profile ?? "alvaro")
+            if let imageData = posts[indexPath.row].profile {
+                cell.profileImageView.image = UIImage(data: imageData)
+            }
             return cell
         }
         
