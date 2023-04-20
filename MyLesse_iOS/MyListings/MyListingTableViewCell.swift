@@ -8,7 +8,7 @@
 import UIKit
 
 class MyListingTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var numBeds: UILabel!
@@ -29,8 +29,5 @@ class MyListingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    
-    @IBAction func moreBtn(_ sender: Any) {
-    }
     
 }

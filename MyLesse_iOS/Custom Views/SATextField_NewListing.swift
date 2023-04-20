@@ -29,7 +29,7 @@ class SATextField_NewListing: UITextField {
         layer.cornerRadius    = frame.size.height/2
         clipsToBounds         = true
         
-        //Placeholder margins --> enter empty box
+        //Placeholder margins --> enter empty box before the placeholder
         leftView              = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         leftViewMode          = .always
         
